@@ -1,1 +1,1 @@
-# METS-QIIME
+# QIIME2
