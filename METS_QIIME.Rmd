@@ -1,0 +1,34 @@
+---
+title: "METS_QIIME"
+author: "Camilla Czapla"
+date: "6/30/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+GreenGenes reference database files were accessed through this tutorial: <https://docs.qiime2.org/jupyterbooks/cancer-microbiome-intervention-tutorial/030-tutorial-downstream/020-taxonomy.html>. SILVA reference database files were accessed here: <https://docs.qiime2.org/2020.11/data-resources/#silva-16s-18s-rrna>.
+
+## Activate QIIME2 or rescript conda environment
+
+![](/home/camilla/METS1.png)
+
+## Train Using a Classifer in order to get taxonomical classification of sequences from METS.
+
+Here is an example with Green Genes classifer (~2 hour runtime):
+![](/home/camilla/METS2.png)
+Here is an example with Silva classifer:
+
+![](/home/camilla/METS3.png)
+
+## Merge GG and SILVA taxonomical classifications (3 modes)  
+
+![](/home/camilla/METS4.png)
+Possible options for --p-mode flag:
+![](/home/camilla/METS6.png)
+
+## Retrieve TSV format of taxonomy table  
+
+![](/home/camilla/METS5.png)
